@@ -22,7 +22,6 @@ body {
   font-weight: 700;
   font-size: 64px;
   line-height: 78px;
-  display: flex;
   align-items: center;
   color: #FFFFFF;
   padding-top: 217px;
@@ -71,7 +70,6 @@ body {
   background: url(./img/bcg-bottom.png);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 556px;
   padding-bottom: 128px;
 }
 
@@ -116,10 +114,67 @@ body {
   background-repeat: no-repeat;
 }
 
+.seasons {
+  min-height: 800px;
+  background: #000915;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  max-width: 584px;
+}
+.left__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  align-items: center;
+  color: #FFFFFF;
+}
+.left__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  align-items: center;
+  color: #FFFFFF;
+  margin-top: 32px;
+}
+.left__button {
+  background: #9C0332;
+  border-radius: 30px;
+  margin-top: 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  width: 234px;
+  height: 49px;
+  border: transparent;
+}
+
+.right_mobile {
+  display: none;
+}
+
+.left__button:hover {
+  cursor: url(./img/hand.png), auto;
+}
+
 @media (max-width: 1230px) {
   .top {
     padding-left: 30px;
     background-position: center;
+  }
+  .seasons {
+    padding-left: 30px;
   }
 }
 @media (max-width: 714px) {
@@ -158,6 +213,35 @@ body {
   }
   .game {
     width: 343px;
+  }
+  .seasons {
+    justify-content: center;
+  }
+}
+@media (max-width: 510px) {
+  .right {
+    display: none;
+  }
+  .right_mobile {
+    display: block;
+  }
+  .left {
+    align-items: center;
+  }
+  .left__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    align-items: center;
+    text-align: center;
+  }
+  .left__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
   }
 }
 @media (max-width: 375px) {
