@@ -38,3 +38,28 @@ function playSeason(month = Number (prompt ('Введите номер меся�
             }
 }
 
+
+function playWords () {
+   
+        let arrWords = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+        arrWords = arrWords.sort(() => Math.random() - 0.5);
+        alert (arrWords);
+
+        let questionOne = prompt('Какое слово было первым в списке?');
+        let questionTwo = prompt('Какое слово было последним в списке?');
+
+        if ((questionOne.toLowerCase() == arrWords[0].toLowerCase()) && (questionTwo.toLowerCase() == arrWords[6].toLowerCase())) {
+            alert('Отличная память! ты все угадал!');
+            
+        } else if ((questionOne.toLowerCase() != arrWords[0].toLowerCase()) && (questionTwo.toLowerCase() != arrWords[6].toLowerCase())){
+            alert('Ну-ка соберись и попробуй еще раз! Ничего не угадал');
+        }
+
+        else {
+            alert('Ты был близок к победе! Ответил правильно на один вопрос!');
+        }
+        
+
+}
+
+

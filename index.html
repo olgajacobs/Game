@@ -16,19 +16,19 @@
     <section class="top center">
         <h1 class="top__title">Добро пожаловать <br>на мой сайт !</h1>
         <p class="top__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span class="bold">поехали</span> и <span class="bold">приступай</span></p>
-        <button class="top__button">Поехали!</button>
+        <a href="#seasons" class="top__button">Поехали!</a>
     </section>
 
     <section class="bottom center">
-        <div class="game game1"><p class="game__text">Игра 1</p>
-        </div>
-        <div class="game game2"><p class="game__text">Игра 2</p>
-        </div>
-        <div class="game game3"><p class="game__text">Игра 3</p>
-        </div>
+        <a href="#seasons" class="game game1"><p class="game__text">Игра 1</p>
+        </a>
+        <a href="#words" class="game game2"><p class="game__text">Игра 2</p>
+        </a>
+        <a href="#" class="game game3"><p class="game__text">Игра 3</p>
+        </a>
     </section>
 
-    <section class="seasons center">
+    <section id="seasons" class="seasons center">
       <div class="left">
         <h1 class="left__title">Времена года</h1>
         <p class="left__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
@@ -45,7 +45,7 @@
     </section>
 
 
-    <section class="seasons words center">
+    <section id="words" class="seasons words center">
 
       <div class="right">
         <img src="img/game-words.png" alt="game">
@@ -57,7 +57,7 @@
       <div class="left">
         <h1 class="left__title">Запомни слова</h1>
         <p class="left__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
-        <button class="left__button">Играть!</button>
+        <button onclick="playWords ()" class="left__button">Играть!</button>
       </div>
 
 

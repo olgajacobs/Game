@@ -50,6 +50,7 @@ body {
   width: 234px;
   height: 49px;
   border: transparent;
+  text-decoration: none;
 }
 
 .top__button:hover {
